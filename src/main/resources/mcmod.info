@@ -1,15 +1,18 @@
 [
 {
-  "modid": "UniDict",
-  "name": "UniDict",
-  "description": "a mod about unifying all the things.",
-  "version": "2.9.2",
-  "mcversion": "${mcversion}",
-  "url": "http://minecraft.curseforge.com/projects/unidict",
-  "updateUrl": "",
-  "authorList": ["WanionCane"],
-  "credits": "the creators of every mod that UniDict interacts.",
-  "logoFile": "UniDictLogo.png",
+  "modid": "${modId}",
+  "name": "${modName}",
+  "description": "A mod about unifying all the things.",
+  "version": "${modVersion}",
+  "mcversion": "${minecraftVersion}",
+  "url": "https://github.com/MrFuzzihead/UniDict",
+  "updateUrl": "https://github.com/MrFuzzihead/UniDict/releases/latest",
+  "authorList": [
+    "WanionCane",
+    "MrFuzzihead"
+  ],
+  "credits": "The creators of every mod that UniDict interacts.",
+  "logoFile": "pack.png",
   "screenshots": [],
   "dependencies": []
 }

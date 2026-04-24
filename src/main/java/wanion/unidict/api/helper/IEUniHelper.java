@@ -2,31 +2,30 @@ package wanion.unidict.api.helper;
 
 /*
  * Created by WanionCane(https://github.com/WanionCane).
- *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import blusunrize.immersiveengineering.api.crafting.MetalPressRecipe;
+import java.util.Iterator;
+
 import net.minecraft.item.ItemStack;
+
+import blusunrize.immersiveengineering.api.crafting.MetalPressRecipe;
 import wanion.unidict.Config;
 import wanion.unidict.MetaItem;
 import wanion.unidict.helper.NEIHelper;
 
-import java.util.Iterator;
+public final class IEUniHelper {
 
-public final class IEUniHelper
-{
     private IEUniHelper() {}
 
-    public static void removeMold(ItemStack removeTarget)
-    {
+    public static void removeMold(ItemStack removeTarget) {
         final int targetHash = MetaItem.get(removeTarget);
-        for (final Iterator<MetalPressRecipe> metalPressRecipesIterator = MetalPressRecipe.recipeList.values().iterator(); metalPressRecipesIterator.hasNext(); )
+        for (final Iterator<MetalPressRecipe> metalPressRecipesIterator = MetalPressRecipe.recipeList.values()
+            .iterator(); metalPressRecipesIterator.hasNext();)
             if (MetaItem.get(metalPressRecipesIterator.next().mold.stack) == targetHash)
                 metalPressRecipesIterator.remove();
-        if (Config.autoHideInNEI)
-            NEIHelper.hide(removeTarget);
+        if (Config.autoHideInNEI) NEIHelper.hide(removeTarget);
     }
 }
