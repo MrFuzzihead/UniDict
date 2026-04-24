@@ -7,7 +7,11 @@ package wanion.unidict.integration;
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
 
 import net.minecraft.item.ItemStack;
 

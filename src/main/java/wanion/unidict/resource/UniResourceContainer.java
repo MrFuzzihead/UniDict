@@ -7,16 +7,21 @@ package wanion.unidict.resource;
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import static wanion.unidict.Config.*;
+import static wanion.unidict.Config.autoHideInNEI;
+import static wanion.unidict.Config.enableSpecificKindSort;
+import static wanion.unidict.Config.keepOneEntry;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 import javax.annotation.Nonnull;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import wanion.unidict.Config;
 import wanion.unidict.MetaItem;
 import wanion.unidict.UniOreDictionary;
 import wanion.unidict.common.SpecificKindItemStackComparator;
@@ -90,7 +95,7 @@ public final class UniResourceContainer {
     }
 
     private void removeBadEntriesFromNEI() {
-        if (entries.size() > 1) if (Config.keepOneEntry) entries.subList(1, entries.size())
+        if (entries.size() > 1) if (keepOneEntry) entries.subList(1, entries.size())
             .forEach(NEIHelper::hide);
         else if (!UniResourceHandler.getKindBlackSet()
             .contains(kind))

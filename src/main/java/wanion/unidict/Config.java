@@ -11,7 +11,11 @@ import static cpw.mods.fml.common.Loader.isModLoaded;
 import static wanion.unidict.common.Reference.SLASH;
 
 import java.io.File;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.Pattern;
 
 import net.minecraftforge.common.config.Configuration;

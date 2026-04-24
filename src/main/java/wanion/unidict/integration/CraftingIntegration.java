@@ -7,7 +7,12 @@ package wanion.unidict.integration;
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.IdentityHashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Nonnull;
 

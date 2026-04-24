@@ -7,7 +7,11 @@ package wanion.unidict.resource;
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.annotation.Nonnull;

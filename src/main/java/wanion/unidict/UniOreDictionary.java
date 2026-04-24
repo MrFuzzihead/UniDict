@@ -7,7 +7,14 @@ package wanion.unidict;
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.IdentityHashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
